@@ -1,0 +1,17 @@
+.row {
+    text-align: center;
+    font-size: 0;
+    display: flex;
+    flex-align: center;
+    justify-content: center;
+}
+
+.cell {
+    font-size: 40px;
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+}
