@@ -42,9 +42,8 @@ function Board() {
     }
 
     function getWin(piece) {
-        return
-            //  crosses
-                (board[0][0] === piece && board[1][1] === piece && board[2][2] === piece)
+            // crosses
+        return (board[0][0] === piece && board[1][1] === piece && board[2][2] === piece)
             ||  (board[0][2] === piece && board[1][1] === piece && board[2][0] === piece)
             //  verticals
             ||  (board[0][0] === piece && board[1][0] === piece && board[2][0] === piece)
@@ -58,7 +57,6 @@ function Board() {
 
     function getDraw() {
         for (const row of board) {
-            console.log(row)
             if (row.some(cell => cell === '')) {
                 return false;
             }
