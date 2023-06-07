@@ -1,0 +1,16 @@
+footer {
+    height: 50px;
+    width: 100%;
+    background: #15CDFF;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    color: white;
+}
+
+p, a {
+    color: white;
+}

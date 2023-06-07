@@ -1,15 +1,17 @@
 import { useState } from 'react'
 import './App.css'
 import Board from './Board.jsx'
-import logo from './assets/react-logo.png'
+import Nav from './Nav.jsx'
+import Footer from './Footer.jsx'
 
 function App() {
 
   return (
     <>
-        <img src={logo} width="40px"/>
+        <Nav />
         <h1>My React tic-tac-toe game</h1>
-        <Board></Board>
+        <Board />
+        <Footer />
     </>
   )
 }
