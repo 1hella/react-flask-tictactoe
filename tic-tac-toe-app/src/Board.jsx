@@ -29,8 +29,9 @@ function Board() {
             } else if (getDraw()) {
                 setStatus("It's a draw.")
             }else {
-                setTurn(turn === "X" ? "O" : "X");
-                setStatus(`It's ${turn}'s turn`)
+                const newTurn = turn === "X" ? "O" : "X";
+                setTurn(newTurn);
+                setStatus(`It's ${newTurn}'s turn`)
             }
         }
     }
